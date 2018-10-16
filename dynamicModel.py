@@ -39,3 +39,6 @@ class DynamicModel:
         print(self.nodes)
         print(self.pathCost)
         return
+
+    def cost(self, startPoint, stopPoint):
+        return
