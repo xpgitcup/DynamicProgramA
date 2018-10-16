@@ -1,6 +1,7 @@
 class DynamicModel:
     nodes = []
     pathCost = []
+    pListStartFromA = []
 
     def initModel(self, dataLines):
         # 首先识别全部的状态--全部的字母
@@ -40,5 +41,14 @@ class DynamicModel:
         print(self.pathCost)
         return
 
-    def cost(self, startPoint, stopPoint):
+    def calculateList(self):
+        m = len(self.nodes)
+        n = len(self.pathCost)
+        print(m, n)
+
+        for i in range(m):
+            vList = []
+            mm = len(self.nodes[i + 1])
+            print("第%d层，共有%d种选择。" % (i, mm))
+
         return
