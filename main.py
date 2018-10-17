@@ -9,7 +9,7 @@ try:
         print(dataLines)
     dynamicModel = DynamicModel()
     dynamicModel.initModel(dataLines)
-    dynamicModel.calculateList()
+    #dynamicModel.calculateList()
     print("计算完成...")
 except IOError:
     print("文件不存在...")
